@@ -52,3 +52,21 @@ app.post("/campgrounds", function(req, res){
 });
 
 // NEW -show form to create a new campground
+app.get("/campgrounds/new", function(req, res){
+    res.render("new");
+});
+
+
+// SHOW - shows more info aboout one campground - this needs to be positioned AFTER "/campgrounds/new"
+app.get("/campgrounds/:id", function(req, res){
+    // find the campground with the provided ID
+    Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground){
+        if(err){
+            console.log("THERE WAS A PROBLEM - CAMPGROUNDS/:ID");
+            console.log(err);
+        }else{
+            console.log(foundCampground);
+            res.render("show", {campground: foundCampground});
+        }
+    });
+});
