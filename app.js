@@ -74,3 +74,7 @@ app.get("/campgrounds/:id", function(req, res){
 app.get("*", function(req, res){
     res.render("notFound");
 });
+
+app.listen(process.envPORT, process.env.IP, function(){
+    console.log("The server is running"); 
+});
