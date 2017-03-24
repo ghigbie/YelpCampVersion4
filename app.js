@@ -4,4 +4,4 @@ const express     = require("express"),
       app         = express();
 
 // self created packages 
-const Campground  = require(./models/campground);
+const Campground = require("./models/campground");
