@@ -4,13 +4,11 @@ let campgroundSchema = mongoose.Schema({
     name: String,
     image: String,
     description: String,
-    comments = [
+    comments: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: comment
-            
-        
-         }
+            ref: "Comment"
+        }
     ]
 });
 
