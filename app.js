@@ -66,7 +66,7 @@ app.get("/campgrounds/:id", function(req, res){
             console.log(err);
         }else{
             console.log(foundCampground);
-            res.render("show", {campground: foundCampground});
+            res.render("campgrounds/show", {campground: foundCampground});
         }
     });
 });
@@ -75,9 +75,18 @@ app.get("/campgrounds/:id", function(req, res){
 // ======================
 
 app.get("/campgrounds/:id/comments/new", function(req, res){
-    res.render("comments/new");
+    // find campground by id
+    Campground.findById(req.params.id, function(err, campground){
+       if(err){
+           console.log(err);
+       }else{
+           res.render("comments/new", {campground: campground});
+       } 
+    });
 });
 
+
+// NOT FOUND 
 app.get("*", function(req, res){
     res.render("notFound");
 });
