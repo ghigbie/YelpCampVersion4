@@ -94,19 +94,15 @@ app.post("/campgrounds/:id/comments", function(req, res){
             res.redirect("/campgrounds");
         }else{
             console.log(req.body.comment);
-            Comment.create(req.body.comment, function(err, comment){
+            Comment.create(req.body.comment, function(err, comment){// create new comment
                 if(err){
                     console.log(err);
                 }else{
-                    campground.comments.push(comment); 
+                    campground.comments.push(comment);// connect new comment to campground
                     campground.save();
-                    res.redirect("campgrounds/" + campground._id);
+                    res.redirect("/campgrounds/" + campground._id);// redirect campground show page 
                 }
              });
-             // create new comment
-             // connect new comment to campground
-             // redirect campground show page 
-            
         }
     });
 });
