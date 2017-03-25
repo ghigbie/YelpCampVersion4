@@ -27,7 +27,7 @@ app.get("/campgrounds", function(req, res){
             console.log("THERE WAS A PROBLEM - CAMPGROUNDS");
             console.log(err);
         }else{
-            res.render("index", {campgrounds: allCampgrounds}); 
+            res.render("campgrounds/index", {campgrounds: allCampgrounds}); 
         }
     });
 });
@@ -53,7 +53,7 @@ app.post("/campgrounds", function(req, res){ //this is the REST convention - sho
 
 // NEW -show form to create a new campground
 app.get("/campgrounds/new", function(req, res){
-    res.render("new");
+    res.render("campgrounds/new");
 });
 
 
@@ -75,11 +75,8 @@ app.get("/campgrounds/:id", function(req, res){
 // ======================
 
 app.get("/campgrounds/:id/comments/new", function(req, res){
-    res.send("<h1>THIS WILL BE THE COMMENTS ROUTE</h1>");
+    res.render("comments/new");
 });
-
-
-
 
 app.get("*", function(req, res){
     res.render("notFound");
