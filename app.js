@@ -70,6 +70,16 @@ app.get("/campgrounds/:id", function(req, res){
         }
     });
 });
+// ======================
+// COMMENTS ROUTE
+// ======================
+
+app.get("/campgrounds/:id/comments/new", function(req, res){
+    res.send("<h1>THIS WILL BE THE COMMENTS ROUTE</h1>");
+});
+
+
+
 
 app.get("*", function(req, res){
     res.render("notFound");
