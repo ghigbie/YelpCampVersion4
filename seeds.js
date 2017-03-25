@@ -6,17 +6,17 @@ var data = [
     {
         name: "Cloud's Rest",
         image: "http://i.imgur.com/nGSZnHN.jpg",
-        description: "A nice place to camp with great sky views."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce purus ligula, euismod at quam in, imperdiet laoreet lacus. Cras varius eget quam dapibus maximus. Vivamus lacinia nec leo non pharetra. Curabitur ante velit, pharetra non tortor ut, ornare hendrerit velit. Sed ut massa auctor, vehicula leo at, placerat enim. Ut eget sapien auctor, laoreet neque eu, molestie lacus. Pellentesque tincidunt purus ac mauris mattis feugiat. Fusce volutpat tincidunt sodales. Ut et nulla ac quam porta ultrices sed ultricies sem. Suspendisse sem dui, scelerisque vel purus aliquet, porttitor interdum velit."
     },
     {
         name: "Granite Mountain's Rest",
         image: "https://s-media-cache-ak0.pinimg.com/originals/9a/85/d8/9a85d8b22e42dd423da0afce92b43d28.jpg",
-        description: "A nice place to camp with great mountain views."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce purus ligula, euismod at quam in, imperdiet laoreet lacus. Cras varius eget quam dapibus maximus. Vivamus lacinia nec leo non pharetra. Curabitur ante velit, pharetra non tortor ut, ornare hendrerit velit. Sed ut massa auctor, vehicula leo at, placerat enim. Ut eget sapien auctor, laoreet neque eu, molestie lacus. Pellentesque tincidunt purus ac mauris mattis feugiat. Fusce volutpat tincidunt sodales. Ut et nulla ac quam porta ultrices sed ultricies sem. Suspendisse sem dui, scelerisque vel purus aliquet, porttitor interdum velit."
     },
     {
         name: "Lake's End",
         image: "http://www.lake-lewisville.org/wp-content/uploads/2012/07/Sycamore-Bend-Campgrounds-2.jpg",
-        description: "A nice place to camp with great lake views."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce purus ligula, euismod at quam in, imperdiet laoreet lacus. Cras varius eget quam dapibus maximus. Vivamus lacinia nec leo non pharetra. Curabitur ante velit, pharetra non tortor ut, ornare hendrerit velit. Sed ut massa auctor, vehicula leo at, placerat enim. Ut eget sapien auctor, laoreet neque eu, molestie lacus. Pellentesque tincidunt purus ac mauris mattis feugiat. Fusce volutpat tincidunt sodales. Ut et nulla ac quam porta ultrices sed ultricies sem. Suspendisse sem dui, scelerisque vel purus aliquet, porttitor interdum velit."
     }
     ];
 
